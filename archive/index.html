@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>小さな器 | KN Gallery</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="KN Gallery">
+    <meta name="reply-to" content="nakaokaorii&#64;gmail.com">
+    <meta name="description" content="小さな器 | KN Gallery">
+
+    <meta property="og:title" content="小さな器 | KN Gallery" />
+    <meta property="og:description" content="会期：2022年4月26日（火）- 5月4日（水）
+    場所・時間：非公開" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://creative-community.space/value/gallery/kn/archive/" />
+    <meta property="og:site_name" content="creative-community.space" />
+    <meta property="og:image" content="https://creative-community.space/value/gallery/kn/archive/00.JPG" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@NLC_update" />
+    <meta name="twitter:image" content="https://creative-community.space/value/gallery/kn/archive/00.JPG" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <style type="text/css">
+         :root {
+            --bg-color: #76A3E9;
+            --text-color: #FFFFF0;
+            --text-shadow: #FFFFF0 0.25vw 0.25vw 0.25vw;
+        }
+        
+        .date {
+            font-family: 'Source Serif Pro', serif;
+            font-size: 1rem;
+            position: absolute;
+            right: 0;
+            top: 5vh;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            color: #483C32;
+            text-shadow: #FFFFF0 0.1vw 0.25vw 0.25vw;
+            animation: 2.5s linear infinite alternate logo;
+        }
+        
+        .cover {
+            background-image: url(00.JPG);
+        }
+        
+        .a {
+            background-image: url(01.JPG);
+        }
+        
+        .b {
+            background-image: url(02.JPG);
+        }
+        
+        .c {
+            background-image: url(03.JPG);
+        }
+        
+        .d {
+            background-image: url(04.JPG);
+        }
+        
+        .e {
+            background-image: url(05.JPG);
+        }
+        
+        .f {
+            background-image: url(06.JPG);
+        }
+        
+        .g {
+            background-image: url(07.JPG);
+        }
+        
+        .h {
+            background-image: url(08.JPG);
+        }
+        
+        .i {
+            background-image: url(09.JPG);
+        }
+        
+        .j {
+            background-image: url(10.JPG);
+        }
+        
+        .k {
+            background-image: url(11.JPG);
+        }
+        
+        .l {
+            background-image: url(12.JPG);
+        }
+        
+        .m {
+            background-image: url(13.JPG);
+        }
+        
+        .n {
+            background-image: url(14.JPG);
+        }
+        
+        .o {
+            background-image: url(15.JPG);
+        }
+        
+        .p {
+            background-image: url(16.JPG);
+        }
+        
+        .q {
+            background-image: url(00.PNG);
+        }
+        
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+        
+        .value,
+        .en {
+            font-family: 'Source Serif Pro', serif;
+            line-height: 200%;
+        }
+        
+        .en {
+            text-shadow: var(--text-shadow);
+        }
+        
+        .en span {
+            color: #483C32;
+            background: #FFFFF0;
+            padding: 0.25vw 0 0;
+        }
+        
+        .en u {
+            text-shadow: var(--text-shadow);
+        }
+        
+        .value {
+            font-size: 2.5rem;
+            width: 90%;
+            height: 65vh;
+            text-shadow: var(--text-shadow);
+        }
+        
+        .info i {
+            font-size: 110%;
+        }
+        
+        .info b {
+            font-weight: 900;
+            font-size: 120%;
+        }
+        
+        .link {
+            position: fixed;
+            bottom: 1rem;
+            left: 2.5vw;
+            font-size: 2.5rem;
+        }
+        
+        .link a {
+            text-decoration: none;
+            color: #FFFFF0;
+        }
+        
+        #open {
+            opacity: 1;
+            position: absolute;
+            z-index: 100;
+            font-size: 1rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        #open span {
+            display: inline-block;
+            margin-left: 2rem;
+            color: #000;
+            font-weight: 555;
+            font-family: 'Source Serif Pro', serif;
+            animation: 2.5s linear infinite alternate gallery;
+        }
+        
+        #open img {
+            margin-bottom: -1.9rem;
+            filter: 200%;
+            animation: 2.5s linear infinite alternate logo;
+        }
+        
+        @keyframes logo {
+            from {
+                filter: invert(0);
+            }
+            to {
+                filter: invert(1);
+            }
+        }
+        
+        @keyframes gallery {
+            from {
+                filter: invert(1);
+            }
+            to {
+                filter: invert(0);
+            }
+        }
+        
+        @media screen and (max-width: 1100px) {
+            .value {
+                font-size: 1rem;
+                text-shadow: #FFFFF0 0.2rem 0.2rem 0.2rem;
+            }
+        }
+    </style>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="../../../scrollable.css" />
+
+
+</head>
+
+<body>
+    <ul class="mousedragscrollable library">
+        <li class="cover">
+            <p class="date">#1 Private Show</p>
+            <div class="contents">
+                <div class="value">
+                    <h1 class="info">
+                        <b>小さな器</b>
+                    </h1>
+                </div>
+                <p class="center en">
+                    <span class="">会期：2022年4月26日（火）- 5月4日（水）</span><br/>
+                    <span class="">時間</span>
+                    <span class="">場所</span>
+                    <span class="">非公開</span>
+                </p>
+            </div>
+        </li>
+
+        <li>
+            <div class="contents">
+                <h2 class="en"><u>小さな器</u></h2>
+                <p class="en">
+                    <span class="">去年の夏、初めてここに来ました。</span>
+                    <br/><span>そして、その時に作った小さな器も一緒に、またここに来ました。</span>
+                    <br/><br/><span>あの時と変わらないことも変わってることも当たり前にある違う季節のここで、あの時に作った小さな器を展示します。</span>
+                </p>
+            </div>
+        </li>
+
+        <li class="a"></li>
+        <li class="b"></li>
+        <li class="c"></li>
+        <li class="d"></li>
+
+        <li>
+            <div class="contents">
+                <p class="en">
+                    去年の夏の滞在中、大きな岩場のある海岸に行ってみた。
+                    <br/>そこに人は誰もおらず、干潮時には沖の方まで歩いていけるほどに潮が引く。
+                    <br/><br/>どこまでも広がるオホーツク海の美しさがとても神聖で、この海岸が私のお気に入りの場所になった。
+                    <br/>今はその大きな岩場の上に人は登る事もできないけど、昔はアイヌの人々が暮らしていたらしい。
+                </p>
+            </div>
+        </li>
+
+        <li class="e"></li>
+        <li class="f"></li>
+
+        <li>
+            <div class="contents">
+                <p class="en">
+                    自然センターに行った時、ふと縄文土器の作り方の本を見て、あんなに美しい場所に住んでいた憧れの人たちが作っていたであろうものを、私も作ってみたいと思った。
+                </p>
+                <p class="en">
+                    近くの山に行って粘土を探したら、まるで売り物のようなすごくいい粘土が運よく見つかって、小さな器を7個作って、寮の駐車場で焼いた。
+                    <br/><br/>憧れの人たちのようにはきれいな模様がつけれなかったけど、この場所に触れられたような、とてもいい気持ちがした。
+                </p>
+            </div>
+        </li>
+
+        <li class="g"></li>
+        <li class="h"></li>
+        <li class="i"></li>
+        <li class="j"></li>
+
+        <li>
+            <div class="contents">
+                <p class="en">
+                    2021年8月22日　土採取
+                    <br/>2021年9月4日,7日　作る
+                    <br/>2021日9月11日　焼く
+                </p>
+                <p class="en">
+                    2022年4月22日　到着
+                    <br/>2022年4月26日　飾る
+                    <br/>2022年5月4日　片付ける
+                </p>
+            </div>
+        </li>
+
+        <li class="k"></li>
+        <li class="l"> </li>
+        <li class="m"></li>
+
+        <li>
+            <div class="contents">
+                <a id="open" href="https://creative-community.space/value/gallery/kn/" target="_parent">
+                    <img src="../infomation/logo.png" width="111rem"><br/>
+                    <span>Gallery</span>
+                </a>
+            </div>
+        </li>
+
+        <li class="n"></li>
+        <li class="o"> </li>
+        <li class="p"></li>
+        <li class="q"></li>
+
+    </ul>
+    <p class="link noprint ">
+        <a href="#" onclick="window.history.back(); return false;">↩︎</a>
+    </p>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<!-- Import the webpage's javascript file -->
+<script src="../../../scrollable.js"></script>
+<script>
+    $(".mousedragscrollable").mousedragscrollable();
+</script>
+
+</html>

@@ -1,36 +1,38 @@
 <html lang="ja">
 
 <head>
-    <title>Gallery Your Name</title>
+    <title>タイトル | KN Gallery</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <meta name="author" content="Your Name">
-    <meta name="description" content="this is a gallery for value an act of valuing">
+    <meta name="author" content="KN Gallery">
+    <meta name="reply-to" content="nakaokaorii&#64;gmail.com">
+    <meta name="description" content="タイトル | KN Gallery">
 
-    <meta property="og:title" content="Gallery Your Name" />
-    <meta property="og:description" content="this is a gallery for value an act of valuing" />
+    <meta property="og:title" content="タイトル | KN Gallery" />
+    <meta property="og:description" content="会期：
+    場所・時間：" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://creative-community.space/value/gallery/show/" />
+    <meta property="og:url" content="https://creative-community.space/value/gallery/kn/show/" />
     <meta property="og:site_name" content="creative-community.space" />
-    <meta property="og:image" content="001.jpeg" />
+    <meta property="og:image" content="000.JPG" />
     <meta property="og:locale" content="ja_JP" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@NLC_update" />
-    <meta name="twitter:image" content="001.jpeg" />
+    <meta name="twitter:image" content="000.JPG" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
-    <link rel="icon" href="../about/000.png">
+    <link rel="icon" href="../infomation/logo.png">
     <style type="text/css">
          :root {
-            --bg-color: #fff;
-            --text-color: #000;
-            --text-shadow: #fff 0.25vw 0.25vw 0.25vw;
+            --bg-color: #000;
+            --text-color: #fff;
+            --text-shadow: #ccc 0.25vw 0.25vw 0.25vw;
         }
         
         .date {
@@ -46,28 +48,8 @@
             animation: 2.5s linear infinite alternate logo;
         }
         
-        .cover {
-            background-image: url(001.jpeg);
-        }
-        
         .a {
-            background-image: url(002.jpeg);
-        }
-        
-        .b {
-            background-image: url(003.jpeg);
-        }
-        
-        .c {
-            background-image: url(004.jpeg);
-        }
-        
-        .d {
-            background-image: url(005.jpeg);
-        }
-        
-        .e {
-            background-image: url(006.jpeg);
+            background-image: url(img/00.JPG);
         }
         
         body {
@@ -135,8 +117,15 @@
             text-decoration: none;
         }
         
+        #open img {
+            margin-bottom: -1.9rem;
+            filter: 200%;
+            animation: 2.5s linear infinite alternate logo;
+        }
+        
         #open span {
             display: inline-block;
+            margin-left: 2rem;
             color: #fff;
             font-weight: 555;
             font-family: 'Source Serif Pro', serif;
@@ -169,26 +158,38 @@
         }
     </style>
 
-    <link rel="stylesheet" href="https://creative-community.space/value/scrollable.css" />
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="../../../scrollable.css" />
 </head>
 
 <body>
     <ul class="mousedragscrollable library">
-        <li class="cover">
-            <p class="date">大切にすることを大切にするためのギャラリー</p>
+        <li class="a">
+            <p class="date">#0 Location</p>
             <div class="contents">
                 <div class="value">
                     <h1 class="info">
-                        <b>Gallery Your Name</b>
+                        <b>Title</b>
                     </h1>
                 </div>
                 <p class="center en">
+                    <span class="">会期：____年__月__日（__）- __日（__）</span><br/>
                     <span>場所</span>
-                    <span>非公開</span>
+                    <span class="">____</span>
                 </p>
             </div>
         </li>
-        
+
+        <li>
+            <div class="contents">
+                <p class="en shadow">
+                    Text
+                    <br/>Text
+                </p>
+            </div>
+        </li>
+        <li class="a"></li>
+
         <li>
             <div class="contents">
                 <h2 class="en"><u>Sub Title</u></h2>
@@ -198,21 +199,15 @@
                 </p>
             </div>
         </li>
-        
-        <li class="a"></li>
-        <li class="b"></li>
-        <li class="c"></li>
-        <li class="d"></li>
 
         <li>
             <div class="contents">
-                <a id="open" href="index.html" target="_parent">
-                    <span>Gallery Your Name</span>
+                <a id="open" href="https://creative-community.space/value/gallery/kn/" target="_parent">
+                    <img src="../infomation/logo.png" width="111rem"><br/>
+                    <span>Gallery</span>
                 </a>
             </div>
         </li>
-        
-        <li class="e"></li>
     </ul>
     <p class="link noprint ">
         <a href="#" onclick="window.history.back(); return false;">↩︎</a>
@@ -222,7 +217,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-<script src="https://creative-community.space/value/scrollable.js"></script>
+<!-- Import the webpage's javascript file -->
+<script src="../../../scrollable.js"></script>
 <script>
     $(".mousedragscrollable").mousedragscrollable();
 </script>

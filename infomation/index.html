@@ -1,0 +1,150 @@
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <title>KN Gallery</title>
+    <style type="text/css">
+        body {
+            font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+        }
+        
+        hr {
+            border: none;
+            padding: 1rem;
+        }
+        
+        .ja .app {
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+        }
+        
+        .ja .app {
+            position: relative;
+            display: flex;
+            width: 90%;
+            height: 90vh;
+            max-height: 55rem;
+            margin: 5vh auto 0;
+            overflow: auto;
+        }
+        
+        .ja .app .essay {
+            display: inline-block;
+            font-size: 0.8rem;
+            padding: 2.5% 2rem 20% 5rem;
+        }
+        
+        .ja .essay p {
+            padding: 0.25rem;
+            mix-blend-mode: overlay;
+            color: #fff;
+            text-shadow: #000 1px 1px;
+            display: inline-block;
+        }
+        
+        .ja .app .essay a {
+            color: black;
+            text-decoration: none;
+            padding-left: 0.25rem;
+            animation: 2.5s linear infinite alternate logo;
+        }
+        
+        .ja .app .essay p a {
+            display: inline-block;
+            margin: 1rem 0.5rem;
+            font-size: 200%;
+            border-left: 1px solid #fff;
+        }
+        
+        @keyframes logo {
+            from {
+                filter: invert(0);
+            }
+            to {
+                filter: invert(1);
+            }
+        }
+        
+        .en .app {
+            position: relative;
+            width: 90%;
+            max-width: 45rem;
+            margin: 0 auto 7.5vh;
+        }
+        
+        .en .app .essay {
+            display: block;
+            font-size: 0.8rem;
+            padding: 1rem 2rem;
+            font-family: 'Source Serif Pro', serif;
+            background-color: rgba(255, 255, 255, 0.45);
+        }
+        
+        .en .app .essay span {
+            margin-right: 1rem;
+        }
+        
+        .en .app .essay a {
+            margin-right: 0.5rem;
+            font-size: 150%;
+            text-decoration: none;
+            color: #000;
+            border-bottom: 1px red solid;
+        }
+        
+        @media print {
+            .noprint {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 550px) {
+            .en .essay p span {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="about" class="ja">
+        <div class="app">
+            <div class="essay">
+                <b><a href="javascript:location.reload(true);">これからの予定</a></b><br/><br/>
+                <p><span>2022.7.19 & 26</span> <a href="../!/">＿｜＿⋆　！</a> <i>34.7076568, 135.4939422</i></p><br/>
+                <p><span>2022.??.??</span> <a href="../colors/">touch the colors</a> <i>アポイントメント制</i></p><br/>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div id="en">
+        <div id="about" class="en">
+            <div class="app">
+                <div class="essay noprint">
+                    <p><u>これまでの展示</u></p>
+                    <p><span>2022.6.21 - 28</span> <a href="../****/" target="_parent">｡::ﾟ::｡::¨･¨::｡::ﾟ::｡::¨･¨::｡::ﾟ</a> <i>@c_c.mobile</i></p>
+                    <p><span>2022.5.27 - 5.30</span> <a href="../🪨/" target="_parent">🪨</a> <i>森、道、市場 2022</i></p>
+                    <p><span>2022.5.10 - 5.14</span> <a href="../april26/" target="_parent">２つ</a> <i>北海道旅行中の車の中</i></p>
+                    <p><span>2022.4.26 - 5.5</span> <a href="../archive/" target="_parent">小さな器</a> <i>非公開</i></p>
+                </div>
+                <hr/>
+                <div class="essay">
+                    <p><u>KN Gallery</u></p>
+                    <p>私は、この小さなギャラリーを持って色んな場所に滞在し、その時その場所にあったものをこのギャラリーに展示します。</p>
+                    <p>偶然見つけた私にとってはとても魅力的で手放せない大切なものを、これからも訪れる先々で見つけ、たくさん集めたいと思っています。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

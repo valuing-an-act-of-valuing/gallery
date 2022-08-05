@@ -1,31 +1,33 @@
 <html lang="ja">
 
 <head>
-    <title>Gallery Your Name</title>
+    <title>タイトル | KN Gallery</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <meta name="author" content="Your Name">
-    <meta name="description" content="this is a gallery for value an act of valuing">
+    <meta name="author" content="KN Gallery">
+    <meta name="reply-to" content="nakaokaorii&#64;gmail.com">
+    <meta name="description" content="タイトル | KN Gallery">
 
-    <meta property="og:title" content="Gallery Your Name" />
-    <meta property="og:description" content="this is a gallery for value an act of valuing" />
+    <meta property="og:title" content="タイトル | KN Gallery" />
+    <meta property="og:description" content="会期：
+    場所・時間：" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://creative-community.space/value/gallery/show/" />
+    <meta property="og:url" content="https://creative-community.space/value/gallery/kn/show/" />
     <meta property="og:site_name" content="creative-community.space" />
-    <meta property="og:image" content="001.jpeg" />
+    <meta property="og:image" content="000.JPG" />
     <meta property="og:locale" content="ja_JP" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@NLC_update" />
-    <meta name="twitter:image" content="001.jpeg" />
+    <meta name="twitter:image" content="000.JPG" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
-    <link rel="icon" href="../about/000.png">
+    <link rel="icon" href="../infomation/logo.png">
     <style type="text/css">
          :root {
             --bg-color: #fff;
@@ -150,6 +152,15 @@
             filter: invert(1);
         }
         
+        .appointment .greeting,
+        .note {
+            display: none;
+        }
+        
+        .appointment .note {
+            display: block;
+        }
+        
         @media screen and (max-width: 550px) {
             .image img {
                 -webkit-filter: blur(0rem);
@@ -171,14 +182,14 @@
 
 <body id="box">
     <div id="image">
-        <p class="random"><img src="001.jpeg"></p>
+        <p class="random"></p>
     </div>
 
     <div id="about" class="ja greeting">
         <div class="app">
             <div class="essay">
-                <p><b>Gallery Your Name</b></p>
-                <p>大切にすることを大切にするためのギャラリー</p>
+                <p><b>展覧会タイトル</b></p>
+                <p>この展覧会について</p>
             </div>
         </div>
     </div>
@@ -187,10 +198,33 @@
         <div id="about" class="en">
             <div class="app">
                 <div class="essay">
-                    <p><u>大切にすることを大切にするためのギャラリー</u></p>
-                    <p>場所 <i>非公開</i></p>
-                    <br/>
-                    <p>by <a href="archive.html" target="_parent">Your Name</a></p>
+                    <p><u>KN Gallery</u> 場所 <i>非公開</i></p>
+                    <p>会期：2022年00月00日（曜日）- 00日（曜日）<br/>時間：</p>
+                    <p><a id="btn">アポイントメント</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="ja note">
+        <div class="app">
+            <div class="essay">
+                <p><span>①大阪駅周辺のフリースペースに、ギャラリーを30分間設置します。</span></p>
+                <p><span>30分の間でいつでもお越しください。</span></p>
+                <p><span>(詳細な場所は後で連絡されます)</span></p>
+                <br/>
+                <p><span>②インスタグラムのビデオチャットにて、リアルタイムの映像を約5分間接続します。</span></p>
+                <p><span>(あなたのカメラと音声はオフにする)</span></p>
+            </div>
+        </div>
+    </div>
+    <div id="en" class="note">
+        <div id="about" class="en">
+            <div class="app">
+                <div class="essay">
+                    <p>①または②を選択し、希望日時とお名前（アカウント名）をご記入の上、📧</p>
+                    <p>①：<a target="_parent" href="mailto:nakaokaorii@gmail.com?subject=タイトル | KN Gallery&amp;body=⌚︎30分間の来場を希望する日時%0D%0A(第一希望)%0D%0A(第二希望)%0D%0A%0D%0Aお名前→">nakaokaorii [at] gmail.com</a></p>
+                    <p>②：<a target="_parent" href="mailto:nakaokaorii@gmail.com?subject=タイトル | KN Gallery&amp;body=⌚︎5分間のビデオチャットを希望する日時%0D%0A(第一希望)%0D%0A(第二希望)%0D%0A%0D%0Aインスタグラムアカウント→">nakaokaorii [at] gmail.com</a></p>
                 </div>
             </div>
         </div>
@@ -199,13 +233,20 @@
         <a href="# " onclick="window.history.back(); return false; ">↩︎</a>
     </p>
     <script type="text/javascript ">
+        let btn = document.querySelector('#btn');
+        let box = document.querySelector('#box');
+
+        let btnToggleclass = function(el) {
+            el.classList.toggle('appointment');
+        }
+
+        btn.addEventListener('click', function() {
+            btnToggleclass(box);
+        }, false);
+
         const random = [
-            "001.jpeg ",
-            "002.jpeg ",
-            "003.jpeg ",
-            "004.jpeg ",
-            "005.jpeg ",
-            "006.jpeg "
+            "000.JPG ",
+            "001.JPG "
         ];
 
         function randomImg(randomArray) {
