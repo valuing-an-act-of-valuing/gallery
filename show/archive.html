@@ -143,6 +143,15 @@
             animation: 2.5s linear infinite alternate gallery;
         }
         
+        @keyframes logo {
+            from {
+                filter: invert(0);
+            }
+            to {
+                filter: invert(1);
+            }
+        }
+        
         @keyframes gallery {
             from {
                 filter: invert(1);
@@ -166,7 +175,7 @@
 <body>
     <ul class="mousedragscrollable library">
         <li class="cover">
-            <p class="date">#0 Location</p>
+            <p class="date">大切にすることを大切にするためのギャラリー</p>
             <div class="contents">
                 <div class="value">
                     <h1 class="info">
@@ -174,13 +183,12 @@
                     </h1>
                 </div>
                 <p class="center en">
-                    <span class="">大切にすることを大切にするためのギャラリー</span><br/>
                     <span>場所</span>
-                    <span class="">非公開</span>
+                    <span>非公開</span>
                 </p>
             </div>
         </li>
-<!--
+        
         <li>
             <div class="contents">
                 <h2 class="en"><u>Sub Title</u></h2>
@@ -190,7 +198,7 @@
                 </p>
             </div>
         </li>
--->
+        
         <li class="a"></li>
         <li class="b"></li>
         <li class="c"></li>
