@@ -176,6 +176,9 @@
 </head>
 
 <body id="gallery">
+    <div id="randomImg">
+        <img src="archive/00.JPG">
+    </div>
 
     <div id="present" class="">
         <video id="video" webkit-playsinline playsinline muted autoplay loop>
@@ -207,6 +210,30 @@
             var p = $("#do");
             p.scrollLeft(1000);
         });
+
+
+        const random = [
+            "archive/00.JPG",
+            "april26/img/0001.JPG",
+            "🪨/img/003.JPG",
+            "****/img/000.JPG"
+        ];
+
+        function randomImg(randomArray) {
+            var random =
+                randomArray[Math.floor(Math.random() * randomArray.length)];
+            console.log(random);
+            return random;
+        }
+
+        function imgGenerator() {
+            var img = `<img src="${randomImg(random)} ">`;
+            document.querySelector("#randomImg").innerHTML = img;
+        }
+        window.setInterval(function() {
+            imgGenerator();
+        }, 5000);
+
         $(function() {
             // #で始まるアンカーをクリックした場合に処理
             $('a[href^=#]').click(function() {
