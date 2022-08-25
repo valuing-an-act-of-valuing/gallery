@@ -1,6 +1,6 @@
 # gallery
 
-**this is a gallery for value an act of valuing**
+**this is a _gallery_ for valuing an act of valuing**
 
 ___
 
