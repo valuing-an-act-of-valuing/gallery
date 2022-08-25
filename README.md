@@ -2,6 +2,8 @@
 
 **this is a _gallery_ for valuing an act of valuing**
 
+[https://creative-community.space/value/gallery/](https://creative-community.space/value/gallery/)
+
 ___
 
 この小さなショーケースは、あなたが大切にするものを大切に展示するためのギャラリーです。   
