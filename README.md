@@ -1,4 +1,4 @@
-# gallery
+# /value/gallery
 
 **this is a _gallery_ for valuing an act of valuing**
 
