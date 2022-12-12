@@ -1,0 +1,73 @@
+{
+  "title" : "大切にすることを大切にするためのギャラリー",
+  "author" : "Members Only",
+  "description" : "this is a gallery for valuing an act of valuing",
+  "site" : "https://creative-community.space",
+  "url" : "/value/gallery/",
+  "image" : "___.jpg",
+  "gallery" : [
+    {
+      "name" : "Gallery Laurel Schwulst",
+      "date" : "New York, USA",
+      "type" : "gallery",
+      "href" : "/value/gallery/laurelschwulst/",
+      "text" : "by Laurel Schwulst",
+      "img" : "none",
+      "src" : "___"
+    },
+    {
+      "name" : "KN Gallery",
+      "date" : "Mobile Based",
+      "type" : "gallery",
+      "href" : "/value/gallery/kn/",
+      "text" : "私は、この小さなギャラリーを持って色んな場所に滞在し、その時その場所にあったものをこのギャラリーに展示します。",
+      "img" : "none",
+      "src" : "___"
+    },
+    {
+      "name" : "小さな器",
+      "date" : "会期：2022年4月26日（火）- 5月4日（水）｜非公開",
+      "type" : "show",
+      "href" : "/value/gallery/kn/archive/",
+      "text" : "at KN Gallery",
+      "img" : "none",
+      "src" : "___"
+    },
+    {
+      "name" : "２つ",
+      "date" : "会期：2022年5月10日（火）- 14日（土）｜アポイントメント制",
+      "type" : "show",
+      "href" : "/value/gallery/kn/april26/",
+      "text" : "at KN Gallery",
+      "img" : "none",
+      "src" : "___"
+    },
+    {
+      "name" : "🪨",
+      "date" : "会期：2022年5月27日（金）- 29日（日）｜森、道、市場 2022",
+      "type" : "show",
+      "href" : "/value/gallery/kn/🪨/",
+      "text" : "at KN Gallery",
+      "img" : "none",
+      "src" : "___"
+    },
+    {
+      "name" : "｡::ﾟ::｡::¨･¨::｡::ﾟ::｡::¨･¨::｡::ﾟ",
+      "date" : "会期：2022年6月21日(火) - 28日(火)｜Instagram (@c_c.mobile)",
+      "type" : "show",
+      "href" : "/value/gallery/kn/****/",
+      "text" : "at KN Gallery",
+      "img" : "none",
+      "src" : "___"
+    },
+    {
+      "name" : "＿｜＿⋆　！",
+      "date" : "会期：2022年7月19日(火) , 26日(火)｜場所：34.7076568, 135.4939422",
+      "type" : "show",
+      "href" : "/value/gallery/kn/!/",
+      "text" : "at KN Gallery",
+      "img" : "none",
+      "src" : "___"
+    }
+  ]
+}
