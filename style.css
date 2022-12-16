@@ -168,11 +168,10 @@ a:hover,
 }
 
 #value .ja_app a {
+  background: var(--bg-color);
   font-size: 175%;
   padding: 0.25rem;
   margin-bottom: 0.5rem;
-
-  background: var(--bg-color);
 }
 
 #value .en_app p:last-child {

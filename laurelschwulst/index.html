@@ -36,8 +36,9 @@
       <b class="title"></b><br/>
       <span class="description"></span>
       <br/>
-      <p>debuted in
-          <a href="http://vg.pe.hu/2f/greenpeople.html" target="_blank">Green People</a>, 2019
+      <p>
+        debuted in
+        <a href="http://vg.pe.hu/2f/greenpeople.html" target="_blank">Green People</a>, 2019
       </p>
       <p>
         moved into
@@ -47,34 +48,33 @@
     <script src="../index.js"></script>
   </main>
 
-  <section id="images">
-    <script>
-    var random = [
-      "img/001.jpeg",
-      "img/002.jpeg",
-      "img/003.jpeg",
-      "img/004.jpeg",
-      "img/005.jpeg",
-      "img/006.jpeg",
-      "img/007.jpeg"
-    ];
+  <section id="images"></section>
+  <script>
+  var random = [
+    "img/001.jpeg",
+    "img/002.jpeg",
+    "img/003.jpeg",
+    "img/004.jpeg",
+    "img/005.jpeg",
+    "img/006.jpeg",
+    "img/007.jpeg"
+  ];
 
-    function randomImg(randomArray) {
-      let random =
-      randomArray[Math.floor(Math.random() * randomArray.length)];
-      console.log(random);
-      return random;
-    }
+  function randomImg(randomArray) {
+    let random =
+    randomArray[Math.floor(Math.random() * randomArray.length)];
+    console.log(random);
+    return random;
+  }
 
-    function backgroundImage() {
-      let images = document.querySelector("#images");
-      images.style.backgroundImage = `url(${randomImg(random)})`;
-    }
-    window.setInterval(function() {
-      backgroundImage();
-    }, 1000);
-    </script>
-  </section>
+  function backgroundImage() {
+    let images = document.querySelector("#images");
+    images.style.backgroundImage = `url(${randomImg(random)})`;
+  }
+  window.setInterval(function() {
+    backgroundImage();
+  }, 2000);
+  </script>
 
   <button id="enter" type="button"><b class="enter"></b></button>
 

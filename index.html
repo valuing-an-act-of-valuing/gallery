@@ -28,37 +28,35 @@
     </div>
 
     <div class="other_app">
-      <p><b class="title ja"></b></p>
+      <b class="title ja"></b>
       <p>size: 65 × 65 × 65 mm<br/>(inside: 59 × 59 × 59 mm)</p>
       <p>included label sticker for put a caption of your value.</p>
-      <p><u>* and engrave with the names of your gallery on the front.</u></p>
+      <u>* and engrave with the names of your gallery on the front.</u>
     </div>
-
-    <script src="index.js"></script>
   </main>
+  <script src="index.js"></script>
 
-  <section id="images">
-    <script>
-    var random = [
-      "img/000.png"
-    ];
+  <section id="images"></section>
+  <script>
+  var random = [
+    "img/000.png"
+  ];
 
-    function randomImg(randomArray) {
-      let random =
-      randomArray[Math.floor(Math.random() * randomArray.length)];
-      console.log(random);
-      return random;
-    }
+  function randomImg(randomArray) {
+    let random =
+    randomArray[Math.floor(Math.random() * randomArray.length)];
+    console.log(random);
+    return random;
+  }
 
-    function backgroundImage() {
-      let images = document.querySelector("#images");
-      images.style.backgroundImage = `url(${randomImg(random)})`;
-    }
-    window.setInterval(function() {
-      backgroundImage();
-    }, 1000);
-    </script>
-  </section>
+  function backgroundImage() {
+    let images = document.querySelector("#images");
+    images.style.backgroundImage = `url(${randomImg(random)})`;
+  }
+  window.setInterval(function() {
+    backgroundImage();
+  }, 1000);
+  </script>
 
   <button id="enter" class="icon" type="button">
     <b>
@@ -83,7 +81,6 @@
 
   <p id="link" class="enter" href="#"></p>
   <a class="back" href="#" onclick="window.history.back(); return false;">↩︎</a>
-
 
 </body>
 

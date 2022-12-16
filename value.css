@@ -22,8 +22,8 @@
 #what,
 #online,
 .back {
-  transition: color 2500ms ease;
   text-decoration: none;
+  transition: color 2500ms ease;
 }
 
 #online:hover,
