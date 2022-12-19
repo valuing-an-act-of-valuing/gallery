@@ -19,36 +19,8 @@
 </head>
 
 <body>
-  <main id="value">
-    <div class="ja_app">
-      <p>ローレルとエリオットが西天満のペフに滞在した2019年の夏、緑色が好きだという共通点から、信号機や非常口に描かれる緑の人や、当時導入されたばかりのインスタグラムの親しい友達（緑色でストーリーズが表される）機能に感心し、自分たちを「グリーンピープル」と自称してその定義や関係性を展覧会にした。</p>
-      <br/>
-      <p>２人と買い物に出かけたある時、ローレルが大きなショーケースに大小様々な手乗りサイズのショーケースが陳列されているのを見つけて、いろいろなサイズの小さなショーケースがあること、こうやって大きなショーケースの中にいろいろなサイズの小さなショーケースを陳列することってなんか「グリーンピープル」っぽいねって感心し、記念にこのショーケースを買った。</p>
-      <br/>
-      <p>
-        ある日、当時のペフの誰かが２人にプレゼントとよもぎ餅か何かを買ってきた。
-        <br/>その餅はプラスチックの緑の葉っぱで包まれていて、バランってなんか「グリーンピープル」っぽいし、こうやって緑の物をプレゼントしてくれるペフのみんなも「グリーンピープル」だって感心し、記念にその偽物の葉っぱをきれいに洗って、小さなショーケースの中に展示した。
-      </p>
-      <br/>
-      <p>これが「大切にすることを大切にするためのギャラリー」が生まれたきっかけ。大切にすることを大切にするために、こうやって自分のギャラリーを持つってことを「グリーンピープル」から学んだ。</p>
-    </div>
-    <div class="other_app">
-      <b class="title"></b><br/>
-      <span class="description"></span>
-      <br/>
-      <p>
-        debuted in
-        <a href="http://vg.pe.hu/2f/greenpeople.html" target="_blank">Green People</a>, 2019
-      </p>
-      <p>
-        moved into
-        <a href="https://fireflysanctuary.today/" target="_blank">firefly sanctuary</a>
-      </p>
-    </div>
-    <script src="../index.js"></script>
-  </main>
 
-  <section id="images"></section>
+  <section id="image" style="position:fixed; z-index:-1; filter: blur(0); -webkit-filter: blur(0);"></section>
   <script>
   var random = [
     "img/001.jpeg",
@@ -68,7 +40,7 @@
   }
 
   function backgroundImage() {
-    let images = document.querySelector("#images");
+    let images = document.querySelector("#image");
     images.style.backgroundImage = `url(${randomImg(random)})`;
   }
   window.setInterval(function() {
@@ -76,22 +48,33 @@
   }, 2000);
   </script>
 
-  <button id="enter" type="button"><b class="enter"></b></button>
+  <div class="ja_app">
+    <p>ローレルとエリオットが西天満のペフに滞在した2019年の夏、緑色が好きだという共通点から、信号機や非常口に描かれる緑の人や、当時導入されたばかりのインスタグラムの親しい友達（緑色でストーリーズが表される）機能に感心し、自分たちを「グリーンピープル」と自称してその定義や関係性を展覧会にした。</p>
+    <br/>
+    <p>２人と買い物に出かけたある時、ローレルが大きなショーケースに大小様々な手乗りサイズのショーケースが陳列されているのを見つけて、いろいろなサイズの小さなショーケースがあること、こうやって大きなショーケースの中にいろいろなサイズの小さなショーケースを陳列することってなんか「グリーンピープル」っぽいねって感心し、記念にこのショーケースを買った。</p>
+    <br/>
+    <p>
+      ある日、当時のペフの誰かが２人にプレゼントとよもぎ餅か何かを買ってきた。
+      <br/>その餅はプラスチックの緑の葉っぱで包まれていて、バランってなんか「グリーンピープル」っぽいし、こうやって緑の物をプレゼントしてくれるペフのみんなも「グリーンピープル」だって感心し、記念にその偽物の葉っぱをきれいに洗って、小さなショーケースの中に展示した。
+    </p>
+  </div>
 
-  <script>
-  let btn = document.querySelector('#enter');
-  let open = document.querySelector('body');
+  <div class="other_app">
+    <b class="title"></b><br/>
+    <span class="description"></span>
+    <br/>
+    <p>
+      debuted in
+      <a href="https://vg.pe.hu/2f/greenpeople.html" target="_blank">Green People</a>, 2019
+    </p>
+    <p>
+      moved into
+      <a href="https://fireflysanctuary.today/" target="_blank">firefly sanctuary</a>
+    </p>
+  </div>
+  <script src="../index.js"></script>
 
-  let btnToggleclass = function(el) {
-    el.classList.toggle('open');
-  }
-
-  btn.addEventListener('click', function() {
-    btnToggleclass(open);
-  }, false);
-  </script>
-
-  <a id="link" href="https://creative-community.space/value/gallery/" target="_parent">大切にすることを大切にするためのギャラリー</a>
+  <b id="what"><a href="/value/gallery/">大切にすることを大切にするためのギャラリー</a></b>
   <a class="back" href="#" onclick="window.history.back(); return false;">↩︎</a>
 
 </body>

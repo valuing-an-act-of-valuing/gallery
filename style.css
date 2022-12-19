@@ -32,7 +32,7 @@ body {
   writing-mode: vertical-rl;
 }
 
-#value .ja_app,
+.ja_app,
 #enter {
   text-shadow:
   1px 1px 0 #fff,
@@ -150,12 +150,11 @@ a:hover,
   z-index: 0;
 }
 
-#value .ja_app::before {
-  content: '大切にすることを大切にするためのギャラリー';
-  display: block;
-  font-size: 125%;
+#value #image {
   position: absolute;
-  right: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 #value .ja_app {
@@ -165,6 +164,11 @@ a:hover,
 #value .en_app {
   background: var(--bg-color);
   line-height: 200%;
+  margin-bottom: 2rem;
+}
+
+#value .other_app {
+  margin-bottom: 4.5rem;
 }
 
 #value .ja_app a {
@@ -172,6 +176,10 @@ a:hover,
   font-size: 175%;
   padding: 0.25rem;
   margin-bottom: 0.5rem;
+}
+
+#value .ja_app b {
+  font-size: 125%;
 }
 
 #value .en_app p:last-child {
@@ -266,8 +274,8 @@ a:hover,
 }
 
 #images video {
-  min-height: 100%;
-  min-width: 100%;
+  min-height: 111%;
+  min-width: 111%;
 }
 
 #link {
@@ -280,12 +288,12 @@ a:hover,
   opacity: 1;
 }
 
+#link:hover {
+  border-left: 1px solid #fff;
+}
+
 .open #link {
   opacity: 0;
   pointer-events: none;
   user-select: none;
-}
-
-#link:hover {
-  border-left: 1px #fff solid;
 }

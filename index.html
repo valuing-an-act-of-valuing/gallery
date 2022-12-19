@@ -9,7 +9,8 @@
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@pe_hu_" />
-  <link rel="icon" href="___">
+  <link rel="icon" href="img/000.png">
+  <link rel="apple-touch-icon" href="img/000.png">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" type="text/css" href="value.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,12 +20,10 @@
 
 <body>
   <main id="value">
+    <section id="image" style="filter: blur(0); -webkit-filter: blur(0);"></section>
     <div class="ja_app">
-      <p>この小さなショーケースは、あなたが大切にするものを大切に展示するためのギャラリーです。</p>
-    </div>
-
-    <div class="en_app">
-      <b class="description"></b><br/>
+      <p><b>この小さなショーケースは、あなたが大切にするものを大切に展示するためのギャラリーです。</b></p>
+      <p>本文</p>
     </div>
 
     <div class="other_app">
@@ -33,13 +32,27 @@
       <p>included label sticker for put a caption of your value.</p>
       <u>* and engrave with the names of your gallery on the front.</u>
     </div>
+
+    <div class="en_app">
+      <b class="description"></b><br/>
+    </div>
   </main>
   <script src="index.js"></script>
 
-  <section id="images"></section>
+  <section id="images">
+    <video webkit-playsinline playsinline muted autoplay loop></video>
+  </section>
+
   <script>
   var random = [
-    "img/000.png"
+    "laurelschwulst/img/001.jpeg",
+    "laurelschwulst/img/001.jpeg",
+    "laurelschwulst/img/002.jpeg",
+    "laurelschwulst/img/003.jpeg",
+    "laurelschwulst/img/004.jpeg",
+    "laurelschwulst/img/005.jpeg",
+    "laurelschwulst/img/006.jpeg",
+    "laurelschwulst/img/007.jpeg"
   ];
 
   function randomImg(randomArray) {
@@ -56,6 +69,27 @@
   window.setInterval(function() {
     backgroundImage();
   }, 1000);
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+  let timedelay = 0;
+  function delayCheck() {
+    if (timedelay == 25) {
+      $('#images video').fadeIn();
+      timedelay = 1;
+    }
+    timedelay = timedelay + 1;
+  }
+
+  $(document).mousemove(function () {
+    $('#images video').fadeOut();
+    timedelay = 5;
+    clearInterval(_delay);
+    _delay = setInterval(delayCheck, 500);
+  });
+
+  _delay = setInterval(delayCheck, 500)
   </script>
 
   <button id="enter" class="icon" type="button">
@@ -79,7 +113,7 @@
   }, false);
   </script>
 
-  <p id="link" class="enter" href="#"></p>
+  <a id="link" class="enter" href="/value/">大切にすることを大切にするための場所</a>
   <a class="back" href="#" onclick="window.history.back(); return false;">↩︎</a>
 
 </body>

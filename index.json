@@ -3,21 +3,15 @@
   "description" : "this is a gallery for valuing an act of valuing",
   "author" : "∧°┐",
   "src" : "img/000.png",
+  "video" : "img/20220509.MOV",
 
   "gallery" : [
-    {
-      "name" : "Gallery Your Name",
-      "date" : "by Appointment Only",
-      "type" : "gallery",
-      "href" : "https://valuing-an-act-of-valuing.github.io/",
-      "text" : "size: 65 × 65 × 65 mm (inside: 59 × 59 × 59 mm)"
-    },
     {
       "name" : "Gallery Laurel Schwulst",
       "date" : "New York, USA",
       "type" : "gallery",
       "href" : "/value/gallery/laurelschwulst/",
-      "text" : "by Laurel Schwulst"
+      "text" : "debuted in Green People, 2019 | moved into firefly sanctuary"
     },
     {
       "name" : "KN Gallery",

@@ -54,17 +54,20 @@ function indexHeader(obj) {
   twitterIMG.setAttribute("content", `${location.href}${obj.src}`);
   head.appendChild(twitterIMG);
 
-  const enter = document.querySelector(".enter");
-  enter.textContent = obj.title;
-
   const titleClass = document.querySelector(".title");
   titleClass.textContent = obj.title;
 
   const description = document.querySelector(".description");
   description.textContent = obj.description;
 
-  const coverImage = document.querySelector('#images');
+  const coverImage = document.querySelector('#image');
   coverImage.style.backgroundImage = `url(${obj.src})`;
+
+  const videoCover = document.querySelector( "#images video" );
+  const videoImage = document.createElement( "source" );
+  videoImage.setAttribute("type", "video/mp4");
+  videoImage.setAttribute("src", obj.video);
+  videoCover.appendChild(videoImage);
 }
 
 function indexGallery(obj) {
